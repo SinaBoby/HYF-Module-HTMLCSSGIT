@@ -1,0 +1,16 @@
+1.To Create a hidden folder ==>  mkdir .<foldername>
+
+-----------------------------------------------------------------
+2.to Create a hidden file ==> touch .<filename>
+
+-----------------------------------------------------------------
+3.To create multiple nested directories in single command ==>
+
+ mkdir -p hyf/test1 hyf1/test2 hyf3/test3
+
+-----------------------------------------------------------------
+4.To append e message to a text file without a newline character ==>
+
+echo -n "your message" >> <filename>
+
+-----------------------------------------------------------------
