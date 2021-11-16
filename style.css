@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 10px;
+}
+header {
+  display: flex;
+  background-color: cornflowerblue;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+img {
+  box-sizing: border-box;
+  width: 200px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.Name {
+  padding: 10px;
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main-info {
+  width: 33.3%;
+  display: flex;
+  margin-bottom: 5px;
+  flex-direction: column;
+  font-size: 22px;
+}
+aside {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  background-color: crimson;
+  padding: 5px;
+}
+.skills {
+  height: 33.3%;
+  margin-right: 2px;
+  padding: 5px;
+  line-height: 1.5rem;
+}
+progress {
+  background-color: rgb(12, 34, 63);
+  height: 24px;
+}
+::-webkit-progress-bar {
+  background-color: grey;
+  border-radius: 10%;
+}
+::-webkit-progress-value {
+  background-color: rgb(59, 61, 182);
+  border-radius: 10%;
+}
+
+.hobbies {
+  height: 33.3%;
+  padding: 5px;
+}
+ul {
+  line-height: 1.5rem;
+}
+.other-info {
+  height: 33.3%;
+  padding: 5px;
+  text-align: left;
+}
+dl {
+  line-height: 1.5rem;
+}
+dd {
+  margin-inline-start: 0px;
+}
+
+main {
+  width: 70%;
+  padding: 10px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+}
+header ul {
+  list-style: none;
+  float: none;
+}
