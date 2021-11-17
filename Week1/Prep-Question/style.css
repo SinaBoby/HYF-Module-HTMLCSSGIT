@@ -1,0 +1,37 @@
+body {
+  background-color: #4ac3fb;
+}
+.black-box {
+  background-color: black;
+  width: 380px;
+  height: 380px;
+  position: fixed;
+  bottom: 0px;
+  left: 500px;
+  border-radius: 80px 80px 0 0;
+  z-index: 1;
+}
+.white {
+  background-color: azure;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  left: 670px;
+  top: 380px;
+}
+.triangle {
+  width: 0;
+  max-height: 0;
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-left: 60px solid yellow;
+  position: fixed;
+  left: 870px;
+  top: 380px;
+}
+p {
+  position: fixed;
+  bottom: 200px;
+}
