@@ -38,7 +38,7 @@ h1 {
   overflow-y: hidden;
 }
 .flexbox-item:nth-child(1) {
-  width: 50%;
+  flex-basis: 50%;
 }
 .flexbox-item:nth-child(1) p {
   font-size: 2vw;
@@ -94,7 +94,7 @@ h3 {
 
 @media (max-width: 768px) {
   .flexbox-item {
-    width: 50%;
+    flex-basis: 50%;
   }
   .grid-list {
     grid-template-columns: repeat(2, 1fr);
@@ -106,10 +106,10 @@ h3 {
 }
 @media (max-width: 600px) {
   .flexbox-item {
-    width: 100%;
+    flex-basis: 100%;
   }
   .flexbox-item:nth-child(1) {
-    width: 100%;
+    flex-basis: 100%;
   }
   .flexbox-item p {
     font-size: 4vw;
