@@ -6,6 +6,6 @@ In This Repository I will post my weekly Projects in HackYourFuture program .
 
 This Repo has basically made of two parts:
 
-. Weekly Projects
+1. Weekly Projects
 
-..* Prep-Questions solutions
+2. Prep-Questions solutions
