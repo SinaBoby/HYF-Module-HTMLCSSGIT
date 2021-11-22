@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: UberMove, system-ui, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+}
+.main-nav {
+  display: flex;
+  background-color: black;
+  width: 100%;
+}
+.nav-left {
+  display: flex;
+  width: fit-content;
+  justify-content: flex-start;
+  padding: 10px;
+  justify-self: left;
+  margin:0 25px;
+}
+.nav-right {
+  display: flex;
+  width: fit-content;
+  justify-content: flex-end;
+  padding: 10px;
+  margin:0 25px 0 auto;
+}
+.logo {
+  font-weight: bolder;
+  font-size: 2em;
+}
+.nav-btn,
+.logo {
+  border: none;
+  padding: 10px;
+  color: blanchedalmond;
+  background-color: inherit;
+  font-family: UberMove;
+  height: 100%;
+}
+.nav-btn {
+  font-size: 1.25em;
+}
+.nav-btn:hover {
+  background-color: rgb(160, 153, 153);
+  color: black;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: blanchedalmond;
+}
+a:hover {
+  background-color: rgb(160, 153, 153);
+  color: black;
+}
+.dropdown-container {
+  display: inline-block;
+  position: relative;
+}
+.drop-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  color: blanchedalmond;
+  min-width: 160px;
+  z-index: 1;
+}
+.drop-content a {
+  background-color: black;
+  display: block;
+  padding: 10px 15px;
+}
+.drop-content a:hover {
+  background-color: rgb(160, 153, 153);
+}
+.dropdown-container:hover .drop-content {
+  display: block;
+}
+.dropdown-container {
+  background-color: black;
+}
+.dropdown-container:hover {
+  background-color: black;
+  color: blanchedalmond;
+}
+.dropbtn {
+  padding: 10px;
+  font-size: 1.25em;
+  color: blanchedalmond;
+  background-color: inherit;
+  border: none;
+  height: 100%;
+}
+.dropbtn:hover {
+  background-color: rgb(160, 153, 153);
+  color: black;
+}
+.first {
+  width: 100%;
+  height: 100%;
+  display:grid;
+  grid-template-columns: ;
+}
+.header { display:flex;
+  flex-direction: column;
+  width:25%;
+  border: 1px solid black;
+  z-index:2;
+}
+.eat > a,
+.delivery > a,
+.ride > a {
+  color: black;
+  text-align: center;
+}
+.eat,
+.delivery,
+.ride {
+  padding: 5px;
+  width:1fr;
+}
+.icons {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+}
+
+
+.h {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  align-items: center;
+  min-height: 40px;
+  max-width: 60px;
+  margin-top: 10px;
+}
+.header1 {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5em;
+  width: 100%;
+  border:1px solid black;
+  column-gap: 20px;
+}
+.first>img {z-index:1;
+             width:100%;
+            }
+
+.header1 > a {
+  color: black;
+  display: block;
+}
+.first-hover {
+  width: fit-content;
+  height: 100%;
+  display: grid;
+}
+.first-hover > img {
+  object-fit: cover;
+  height: 100%;
+}
+.apps > i {
+  font-size: 24px;
+}
+@media (max-width: 1137px) {
+  .dropdown-container {
+    display: none;
+  }
+}
+@media (max-width: 845px) {
+  .un {
+    display: none;
+  }
+}
