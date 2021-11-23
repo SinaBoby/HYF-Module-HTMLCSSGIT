@@ -5,11 +5,16 @@
   font-family: UberMove, system-ui, 'Helvetica Neue', Helvetica, Arial,
     sans-serif;
 }
+
+body{
+  margin:auto;
+}
+
 .main-nav {
   display: flex;
-  background-color: black;
-  width: 100%;
+  background-color: black; 
 }
+
 .nav-left {
   display: flex;
   width: fit-content;
@@ -18,6 +23,7 @@
   justify-self: left;
   margin:0 25px;
 }
+
 .nav-right {
   display: flex;
   width: fit-content;
@@ -25,10 +31,18 @@
   padding: 10px;
   margin:0 25px 0 auto;
 }
+.menubar {
+  display:none;
+  align-items: center;
+  color: blanchedalmond;
+  column-gap:5px ;
+}
+
 .logo {
   font-weight: bolder;
   font-size: 2em;
 }
+
 .nav-btn,
 .logo {
   border: none;
@@ -38,26 +52,32 @@
   font-family: UberMove;
   height: 100%;
 }
+
 .nav-btn {
   font-size: 1.25em;
 }
+
 .nav-btn:hover {
   background-color: rgb(160, 153, 153);
   color: black;
 }
+
 a {
   display: inline-block;
   text-decoration: none;
   color: blanchedalmond;
 }
+
 a:hover {
   background-color: rgb(160, 153, 153);
   color: black;
 }
+
 .dropdown-container {
   display: inline-block;
   position: relative;
 }
+
 .drop-content {
   display: none;
   position: absolute;
@@ -66,24 +86,30 @@ a:hover {
   min-width: 160px;
   z-index: 1;
 }
+
 .drop-content a {
   background-color: black;
   display: block;
   padding: 10px 15px;
 }
+
 .drop-content a:hover {
   background-color: rgb(160, 153, 153);
 }
+
 .dropdown-container:hover .drop-content {
   display: block;
 }
+
 .dropdown-container {
   background-color: black;
 }
+
 .dropdown-container:hover {
   background-color: black;
   color: blanchedalmond;
 }
+
 .dropbtn {
   padding: 10px;
   font-size: 1.25em;
@@ -92,85 +118,323 @@ a:hover {
   border: none;
   height: 100%;
 }
+
 .dropbtn:hover {
   background-color: rgb(160, 153, 153);
   color: black;
 }
-.first {
+
+.first-hover {
   width: 100%;
   height: 100%;
-  display:grid;
-  grid-template-columns: ;
+  display: grid;
+  grid-template-columns:1fr 3fr 7fr 1fr;
+  grid-template-rows:1fr 10fr 1fr; 
 }
-.header { display:flex;
+
+.header { 
+  display:flex;
   flex-direction: column;
-  width:25%;
+  justify-content: space-between ;
   border: 1px solid black;
   z-index:2;
+  position:relative;
+  grid-column: 2/3;
+  grid-row: 2/3 ;
+  background-color:rgb(230, 222, 222);
+  width:100%;
 }
-.eat > a,
+
+.old {
+  z-index:1;  
+  position:relative;
+  grid-column: 1/5;
+  grid-row:1/4;
+  height: 100%;
+  max-width: 100%;
+   }
+
+.icons {
+ display: flex;
+ width: 100%;
+ height: 30%;
+ align-items: center;
+ border: 1px solid black;
+ padding:8px;
+  }
+
+  .eat > a,
 .delivery > a,
 .ride > a {
   color: black;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 .eat,
 .delivery,
 .ride {
-  padding: 5px;
-  width:1fr;
-}
-.icons {
-  display: flex;
-  max-width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  border: 1px solid black;
-}
-
-
-.h {
-  display: flex;
-  font-size: 14px;
-  font-weight: 500;
-  align-items: center;
-  min-height: 40px;
-  max-width: 60px;
-  margin-top: 10px;
-}
-.header1 {
   display: flex;
   flex-direction: column;
-  line-height: 1.5em;
-  width: 100%;
-  border:1px solid black;
-  column-gap: 20px;
+  justify-content: space-evenly;
+  flex-basis:33.3%;
+  text-align: center;
+  height: fit-content;
 }
-.first>img {z-index:1;
-             width:100%;
-            }
 
-.header1 > a {
+ .fas,.fa-taxi,.fa-utensils,.fa-car-side {
+   padding-top:1vw;
+   font-size:2vw;
+ }
+
+  .h {
+    display: flex;
+    font-size: 1.5vw;
+    align-items: center;
+    max-height: fit-content;
+    max-width: fit-content;
+    padding: 1vw 0;
+    font-weight:bold;
+    justify-self: center; 
+  }
+  .header1> h2,.header1> p,.header1> button,.header1> a 
+  {
+    padding:8px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    
+  }
+
+  .header1 a { 
+    text-decoration: underline;
+  }
+
+.header1 {
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    line-height:2vw;
+    width: 100%;
+    height: 100%;
+    border:1px solid black;   
+  }
+  .header1 button {
+    border: none;
+    background-color:black;
+    border-radius: 10%;
+    color:ivory;
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+    padding:7px;
+  font-weight: bold;
+font-size: 1.25vw;}
+
+.header1 > a ,p {
   color: black;
-  display: block;
+  font-size:1.25vw; 
 }
-.first-hover {
-  width: fit-content;
-  height: 100%;
-  display: grid;
+
+.mid-sec1 {
+  background-image: url(images/newyork.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid black;
+  padding: 2vw;
 }
-.first-hover > img {
+.mid-sec1 a {
+  font-size:1.5vw; 
+  padding:5px;
+  
+}
+.mid-sec1 button {
+  border: none;
+    background-color:black;
+    border-radius: 10%;
+    color:ivory;
+    height: fit-content;
+    width: fit-content;
+    align-self: left;
+    padding:1vw;
+  font-weight: bold;
+  margin: 2vw;
+}
+.mid-sec1 p {
+  font-size:1.5vw;
+}
+.mid-sec1 h2 , .mid-sec h2{
+  font-size: 4vw;
+}
+
+.mid-sec {
+  padding:2vw;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 4vw;
+  margin-bottom: 2vw;
+}
+.articles { justify-content: space-evenly;
+  
+}
+.safety,.city {
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 3vw;
+  align-items: center;
+  width:50%;
+  
+}
+.city,.safety,.mid-sec,.articles {
+  display:flex;
+  border:1px solid black;
+}
+.safety img,.city img  {
   object-fit: cover;
-  height: 100%;
+  width: 40vw;
+  height:25vw;
+  margin: 1rem;
 }
-.apps > i {
-  font-size: 24px;
+.safety p ,.city p {display: flex;
+  padding: 1vw;
+  font-size: 1.25vw;
+  border:1px solid black;
+  text-align: center;
+  line-height: 2rem;
 }
+.safety a ,.city a{
+text-decoration: underline;
+  color: black;
+  font-size:1.25vw;
+  padding:1.5vw;
+  background-color: rgb(223, 209, 209);
+  margin-bottom: 1vw;
+  border-radius: 20%;
+  
+}
+.safety h3 , .city h3 {
+  font-size: 2.25vw;
+}
+.articles h2 {
+  padding:2vw;
+}
+.down-sec {
+  margin-top: 2vw;
+  display:grid;
+  grid-template-columns: 0.75fr 4.5fr 1.5fr 4.5fr 0.75fr;
+  grid-template-rows: 2fr 1fr 2fr;
+}
+.down-sec a {
+  text-decoration: underline;
+  color: black;
+  font-size:1.5vw;
+  padding: 1vw;;
+  margin-bottom: 1vw;;
+}
+.down-sec article {
+  border:1px solid black;
+  display:flex;
+  flex-direction: column;
+
+}
+.about {display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.news {display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 4/5;
+  grid-row:1/2;
+}
+.globe {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.fa-solid ,.fa-newspaper,.fa-house,.fa-address-card {
+  padding:1.5vw;
+   font-size:2.5vw;
+}
+.globe p,.news p,.about p {
+  text-align: center;
+  line-height: 1.5rem;
+  font-size:1.25vw;
+  padding:0.75vw;
+  margin:0.5 vw;
+}
+.down-sec h3 {
+  font-size:2vw} 
+
+
 @media (max-width: 1137px) {
   .dropdown-container {
     display: none;
   }
+  .first-hover {
+    display:flex;
+    flex-direction: column;
+  }
+  header1 {
+    height:max-content
+  }
+  .header1 h2,.header1 p,.header1 a 
+  { justify-content: start;
+    padding:15px;
+    margin:2vw 0;
+    font-size: 3vw;}
+    .header1> h2 {
+      font-size:4.5vw;
+    }
+    .fas,.fa-taxi,.fa-utensils,.fa-car-side {
+      padding-top:1.5vw;
+      font-size:4vw;
+    }
+    .header1 button {
+      padding:2vw;
+      font-size:3vw;
+      margin: 2vw;
+    }
+    .h{
+      font-size: 3vw;
+    }
+    .menubar {
+      display:flex;
+      align-items: center;
+      color: blanchedalmond;
+      column-gap:5px ;
+    }
+    .mid-sec {
+      align-items: center;
+    }
+    .articles {
+      flex-direction: column;
+      align-items: center;
+    }
+    .city,.safety {
+      width:70%;
+    }
 }
+@media (max768) {
+  .down-sec {
+    
+  }
+}
+
 @media (max-width: 845px) {
   .un {
     display: none;
